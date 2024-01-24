@@ -18,12 +18,6 @@ The dataset contains information from a city hotel and a resort hotel, including
 - Customer type
 - Special requests and more
 
-## Installation
-Instructions on how to install any necessary libraries or run the Jupyter notebook.
-
-```bash
-pip install -r requirements.txt
-
 # File Descriptions
 
 - `Hotel_Booking_EDA.ipynb`: Jupyter notebook containing the EDA process and visualizations.
