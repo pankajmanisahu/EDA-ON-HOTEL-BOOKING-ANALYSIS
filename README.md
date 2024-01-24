@@ -30,12 +30,3 @@ A brief summary of the key findings and insights from the EDA, such as booking t
 ## Conclusions
 Final thoughts on the project outcomes, business impacts of the insights, and potential strategies for hotel management.
 
-## How to Contribute
-Instructions for how other developers can contribute to the project.
-
-## License
-Details about the project license (if applicable).
-
-## Contact Information
-Your contact information for others to reach you for more information or collaboration.
-
