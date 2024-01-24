@@ -74,4 +74,13 @@ Mainly used Matplotlib and Seaborn for visualization, employing various charts s
 Key takeaways from the analysis:
 - City hotels are busier and generally have a higher ADR than Resort hotels.
 - Guests prefer shorter stays, with Resort hotels favored for longer stays.
-- High cancellation rates in
+- High cancellation rates in both hotel types, with few repeat guests.
+- Most guests are from European countries, particularly Portugal.
+- July and August are the busiest and most profitable months for both hotels.
+
+## Challenges
+- **Handling a Large Amount of Duplicate Data:** Significant effort was needed to identify and remove duplicate entries to ensure data quality.
+- **Dealing with Incorrect Data Types:** Several columns had to be converted to appropriate data types for accurate analysis.
+- **Choosing Appropriate Visualization Techniques:** Selecting the right visualization tools and techniques was crucial to effectively convey the findings.
+- **Addressing Numerous Null Values in the Dataset:** The dataset contained a substantial number of null values, which required careful handling to maintain data integrity.
+
