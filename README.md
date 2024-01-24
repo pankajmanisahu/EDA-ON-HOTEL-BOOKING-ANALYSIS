@@ -42,21 +42,78 @@ We are provided with a dataset containing booking information for a city hotel a
 Total number of rows in data: 119,390
 Total number of columns: 32
 
-## Data Cleaning and Feature Engineering
-- **Removing Duplicate Rows:** All duplicate rows were dropped.
-- **Handling Null Values:** Null values in 'company' and 'agent' were replaced by 0. Null values in 'country' were replaced by 'others'. Null values in 'children' were replaced by the mean of the column.
-- **Converting Columns to Appropriate Data Types:** Changed data type of 'children', 'company', 'agent' to int type. Changed data type of 'reservation_status_date' to date type.
-- **Removing Outliers:** One outlier was found in the 'adr' column and was dropped.
-- **Creating New Columns:** Created 'total_stay' by adding 'stays_in_weekend_nights' + 'stays_in_week_nights'. Created 'total_people' by adding 'adults' + 'children' + 'babies'.
+## Data Cleaning and Manipulations
 
-## Conclusion
-Key takeaways from the analysis:
-- City hotels are busier and generally have a higher ADR than Resort hotels.
-- Guests prefer shorter stays, with Resort hotels favored for longer stays.
-- High cancellation rates in both hotel types, with few repeat guests.
-- July and August are the busiest and most profitable months for both hotels.
+## Dropped Duplicate Rows
+- **Action:** Removed 31,994 duplicate entries.
+- **Reason:** To ensure data uniqueness and accuracy for the analysis.
 
-## Challenges
+## Handled Missing Values
+- **Action:** Columns such as 'company' and 'agent' were removed.
+- **Reason:** Missing values were addressed, and columns were removed due to their low impact on the analysis.
+
+## Imputed 'Children' Column
+- **Action:** Replaced missing values in the 'children' column with the mode (0).
+- **Reason:** To reflect transactions with no children present.
+
+## Standardized 'Country' Column
+- **Action:** Substituted missing 'country' values with 'other'.
+- **Reason:** To maintain data integrity without significantly altering the dataset's size.
+
+## Eliminated Rows with No Guests
+- **Action:** Excluded bookings with zero adults, children, and babies.
+- **Reason:** These records do not contribute meaningfully to demand analysis.
+
+## Type Conversion
+- **Action:** Converted 'children' and 'reservation_status_date' columns to appropriate data types.
+- **Reason:** For more accurate computation and representation.
+
+## Added Calculated Columns
+- **Action:** Introduced 'total_people' and 'total_stay' columns.
+- **Reason:** To facilitate a more granular analysis of guest composition and stay duration.
+
+## Filtered Out Negative ADR Values
+- **Action:** Removed records with negative ADR values.
+- **Reason:** Since average daily rate should be non-negative.
+
+## Strategic Recommendations
+
+To achieve the business objectives of optimizing hotel operations, maximizing revenue, and enhancing guest satisfaction, the following strategies are suggested:
+
+## Dynamic Pricing and Promotions
+- **Objective:** Utilize insights from seasonal booking trends and ADR analysis.
+- **Action:** Implement dynamic pricing for high-demand periods (May to August) and special promotions during off-peak months (especially January and November).
+
+## Targeted Marketing
+- **Objective:** Focus marketing efforts on popular hotel types and room categories.
+- **Action:** Emphasize City hotel offerings and popular room types (A, D, E) and tailor marketing to attract transient customers, the largest customer segment.
+
+## Cancellation Policy Optimization
+- **Objective:** Address high cancellation rates, especially in City hotels.
+- **Action:** Review and revise cancellation policies, considering strategies like non-refundable rates or early booking incentives.
+
+## Enhance Family-Friendly Services
+- **Objective:** Reduce high cancellation rates among bookings with children or babies.
+- **Action:** Improve family-friendly amenities and services, such as child care, entertainment options, or family packages.
+
+## Distribution Channel Analysis
+- **Objective:** Focus on efficient distribution channels.
+- **Action:** Given high cancellation rates from TA/TO channels, strengthen direct booking channels or corporate partnerships.
+
+## Meal Plan Optimization
+- **Objective:** Align with the popularity of 'BB' (Bed & Breakfast).
+- **Action:** Enhance breakfast offerings and consider special breakfast packages; evaluate and adjust 'FB' (Full Board) offerings.
+
+## Guest Experience Improvement
+- **Objective:** Address guest satisfaction for those not getting their reserved room type.
+- **Action:** Offer compensations or upgrades to enhance satisfaction and potentially increase ADR.
+
+## Utilize Data for Forecasting
+- **Objective:** Leverage EDA insights for better forecasting and resource allocation.
+- **Action:** Ensure staffing and inventory are aligned with expected demand, continuously monitor metrics, and adapt strategies.
+
+The EDA of the hotel booking dataset provides valuable insights into customer preferences, booking trends, and revenue factors. By strategically implementing these solutions, the hotel can optimize its operations, enhance guest satisfaction, and maximize revenue. Leveraging data-driven insights for informed decision-making is key to aligning with business objectives and market dynamics. Continuous monitoring and adaptation of strategies will be crucial for sustained growth and competitiveness in the hospitality industry.
+
 - **Handling a Large Amount of Duplicate Data:** Significant effort was needed to identify and remove duplicate entries to ensure data quality.
 - **Dealing with Incorrect Data Types:** Several columns had to be converted to appropriate data types for accurate analysis.
 - **Choosing Appropriate Visualization Techniques:** Selecting the right visualization tools and techniques was crucial to effectively convey the findings.
