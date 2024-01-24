@@ -3,6 +3,11 @@
 ## Objective
 The main objective of this project is to perform an Exploratory Data Analysis (EDA) on a comprehensive hotel bookings dataset. The goal is to draw useful conclusions about general trends in hotel bookings and understand how various factors governing hotel bookings interact with each other.
 
+# File Descriptions
+
+- `HOTEL_BOOKING_ANALYSIS_EDA.ipynb`: Jupyter notebook containing the EDA process and visualizations.
+- `Hotel Bookings.csv`: Dataset used for the analysis.
+
 ## Dataset
 We are provided with a dataset containing booking information for a city hotel and a resort hotel, encompassing a wide range of features:
 
