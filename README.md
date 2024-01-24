@@ -49,33 +49,11 @@ Total number of columns: 32
 - **Removing Outliers:** One outlier was found in the 'adr' column and was dropped.
 - **Creating New Columns:** Created 'total_stay' by adding 'stays_in_weekend_nights' + 'stays_in_week_nights'. Created 'total_people' by adding 'adults' + 'children' + 'babies'.
 
-## Exploratory Data Analysis
-Performed EDA to answer questions like:
-- Which agent makes the most number of bookings?
-- Which room type is in most demand and generates the highest ADR?
-- What is the most preferred meal type of customers?
-- What is the percentage of bookings in each hotel type?
-
-Mainly used Matplotlib and Seaborn for visualization, employing various charts such as bar plots, histograms, scatter plots, pie charts, line plots, heatmaps, and box plots.
-
-### Univariate Analysis
-- Agent no. 9 has made the most number of bookings.
-- Room type A is most demanded, but room types H, G, and C generate better ADR.
-- The most popular meal type is BB (Bed and Breakfast).
-- Around 60% of bookings are for City hotels, making them busier than Resort hotels.
-
-### Bivariate Analysis
-- City hotels have a slightly higher overall ADR and more bookings compared to Resort hotels.
-- Almost 30% of City Hotel bookings got canceled.
-- Both hotels have a small percentage of repeat customers, with Resort hotels slightly higher.
-- TA/TO is the most used channel for early bookings.
-
 ## Conclusion
 Key takeaways from the analysis:
 - City hotels are busier and generally have a higher ADR than Resort hotels.
 - Guests prefer shorter stays, with Resort hotels favored for longer stays.
 - High cancellation rates in both hotel types, with few repeat guests.
-- Most guests are from European countries, particularly Portugal.
 - July and August are the busiest and most profitable months for both hotels.
 
 ## Challenges
