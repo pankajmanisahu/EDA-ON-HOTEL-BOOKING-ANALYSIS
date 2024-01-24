@@ -22,7 +22,6 @@ The dataset contains information from a city hotel and a resort hotel, including
 
 - `HOTEL_BOOKING_ANALYSIS_EDA.ipynb`: Jupyter notebook containing the EDA process and visualizations.
 - `Hotel Bookings.csv`: Dataset used for the analysis.
-- `requirements.txt`: List of Python packages required for the project.
 
 ## Results Summary
 A brief summary of the key findings and insights from the EDA, such as booking trends, customer preferences, and revenue factors.
