@@ -42,7 +42,7 @@ We are provided with a dataset containing booking information for a city hotel a
 Total number of rows in data: 119,390
 Total number of columns: 32
 
-## Data Cleaning and Manipulations
+## Data Cleaning and Manipulations:
 
 ## Dropped Duplicate Rows
 - **Action:** Removed 31,994 duplicate entries.
@@ -76,7 +76,7 @@ Total number of columns: 32
 - **Action:** Removed records with negative ADR values.
 - **Reason:** Since average daily rate should be non-negative.
 
-## Strategic Recommendations
+## Strategic Recommendations:
 
 To achieve the business objectives of optimizing hotel operations, maximizing revenue, and enhancing guest satisfaction, the following strategies are suggested:
 
@@ -112,8 +112,10 @@ To achieve the business objectives of optimizing hotel operations, maximizing re
 - **Objective:** Leverage EDA insights for better forecasting and resource allocation.
 - **Action:** Ensure staffing and inventory are aligned with expected demand, continuously monitor metrics, and adapt strategies.
 
+## Conclusion
 The EDA of the hotel booking dataset provides valuable insights into customer preferences, booking trends, and revenue factors. By strategically implementing these solutions, the hotel can optimize its operations, enhance guest satisfaction, and maximize revenue. Leveraging data-driven insights for informed decision-making is key to aligning with business objectives and market dynamics. Continuous monitoring and adaptation of strategies will be crucial for sustained growth and competitiveness in the hospitality industry.
 
+## Challenges:
 - **Handling a Large Amount of Duplicate Data:** Significant effort was needed to identify and remove duplicate entries to ensure data quality.
 - **Dealing with Incorrect Data Types:** Several columns had to be converted to appropriate data types for accurate analysis.
 - **Choosing Appropriate Visualization Techniques:** Selecting the right visualization tools and techniques was crucial to effectively convey the findings.
